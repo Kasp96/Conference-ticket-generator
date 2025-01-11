@@ -1,0 +1,57 @@
+.app-body {
+	margin-top: 1.15rem;
+
+	.label {
+		margin-bottom: 0.5rem;
+		font-size: 1.25rem;
+		color: var(--clr-neutral-300);
+		font-weight: 600;
+	}
+
+	.upload-box {
+		.upload-box-content {
+			background-color: var(--clr-faded-400);
+			border: 2px dashed var(--clr-neutral-500);
+			border-radius: 10px;
+			backdrop-filter: blur(2px);
+
+			.upload-img-icon {
+				margin: 1rem 0 0.75rem 0;
+				background-color: var(--clr-faded-500);
+				border: 2px solid var(--clr-neutral-700);
+				border-radius: 10px;
+			}
+
+			.upload-text {
+				font-size: 1.15rem;
+				color: var(--clr-neutral-500);
+				font-weight: 500;
+			}
+		}
+		.hint {
+			margin: 0.75rem 0 1.25rem 0;
+			font-size: 0.75rem;
+			color: var(--clr-neutral-500);
+			font-weight: 700;
+		}
+	}
+	.input {
+		padding: 14px;
+		margin-bottom: 1.5rem;
+		background-color: var(--clr-faded-400);
+		border: 1px solid var(--clr-neutral-500);
+		border-radius: 10px;
+		color: var(--clr-neutral-300);
+	}
+	.input::placeholder {
+		color: var(--clr-neutral-300);
+	}
+	.generate-btn {
+		padding: 12px;
+		background-color: var(--clr-orange-500);
+		font-size: 1.25rem;
+		font-weight: 900;
+		color: var(--clr-neutral-900);
+		border-radius: 8px;
+	}
+}

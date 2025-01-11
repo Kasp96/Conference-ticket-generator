@@ -1,19 +1,11 @@
 body {
-	font-family: var(--ff-primary);
-	background-color: #777;
+	background-image: url('/dist/images/background-mobile.png');
+	background-size: cover;
 }
-.ticket {
-	background-image: url('/dist/images/pattern-ticket.svg');
+
+.container {
+	background-image: url('/dist/images/pattern-lines.svg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 160px;
-	width: 350px;
-
-	.ticket-code {
-		top: 50%;
-		right: 0.25rem;
-		transform: translateY(-50%) rotate(90deg);
-		font-size: 1.25rem;
-		color: var(--clr-neutral-500);
-	}
+	padding-top: 1.95rem;
 }

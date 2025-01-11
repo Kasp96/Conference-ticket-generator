@@ -1,4 +1,7 @@
 @use '../utils/reset' as *;
 @use '../utils/variables' as *;
 @use '../components/main' as *;
-// @use '../utils/media' as *;
+@use '../components/header' as *;
+@use '../components/app-body' as *;
+@use '../components/ticket' as *;
+@use '../utils/media' as *;

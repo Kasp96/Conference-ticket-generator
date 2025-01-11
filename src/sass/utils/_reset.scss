@@ -9,6 +9,7 @@
 html,
 body {
 	height: 100%;
+	font-family: var(--ff-primary);
 }
 
 html {
@@ -30,6 +31,9 @@ button,
 textarea,
 select {
 	font-family: inherit;
+}
+button {
+	cursor: pointer;
 }
 
 ul,
