@@ -10,44 +10,74 @@
 
 <body>
 
+    <div class="container">
+        <header class="app-header">
+            <div class="app-name-container">
+                <img class="conf-logo" src="../dist/images/logo-mark.svg" alt="conference logo">
+                <h2 class="conf-name">Coding Conf</h2>
+            </div>
+            <h1 class="conf-heading">Your Journey to Coding Conf 2025 Starts Here!</h1>
+            <p class="conf-text">Secure your spot at next year's biggest coding conference.</p>
+        </header>
+        <main>
+            <div class="app-body">
+                <div class="drag-and-drop-box">
+                    <label for="avatar">Upload Avatar</label>
+                    <div class="drag-and-drop-box-body">
+                        <img src="/dist/images/icon-upload.svg" alt="upload photo image">
+                        <p class="drop-box-text">Drag and drop or click to upload</p>
+                    </div>
+                    <p class="hint d-flex align-items-center">
+                        <img src="/dist/images/icon-info.svg" alt="hint image">
+                        Upload your photo (JPG or PNG, max size: 500KB).
+                    </p>
+                </div>
+                <div class="name-box d-flex flex-column">
+                    <label for="name">Full Name</label>
+                    <input type="text" placeholder="example@email.com">
+                </div>
+                <div class="github-box d-flex flex-column">
+                    <label for="GitHub-name">GitHub Username</label>
+                    <input type="text" placeholder="@yourusername">
+                </div>
+                <div class="generate-btn">Generate My Ticket</div>
 
-    
+                <div class="generated-ticket-container d-none">
+                    <h2 class="generated-ticket-heading">
+                        Congrats, Jonatan Kristof! Your ticket is ready.
+                    </h2>
+                    <p class="generated-ticket-info">We've emailed your ticket to jonatan@email.com and will send
+                        updates in the run up to the event.</p>
+                    <div class="ticket position-relative">
+                        <div class="ticket-details">
+
+                            <div class="details-top">
+                                <img src="/dist/images/logo-mark.svg" alt="conference logo">
+                                <div>
+                                    <h3 class="ticket-conf-name">Coding Conf</h3>
+                                    <p class="date">Jan 31, 2025 / Austin, TX</p>
+                                </div>
+                            </div>
+                            <div class="details-bottom">
+                                <div>
+                                    <h4 class="participant-name">Jonatan Kristof</h4>
+                                    <p class="github-name">
+                                        <img src="/dist/images/icon-github.svg" alt="github logo">
+                                        @jonatankristof0101
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <p class="ticket-code position-absolute">#01609</p>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 
 
-
-
-    <!-- Form starts -->
-
-    Your Journey to Coding Conf 2025 Starts Here!
-
-    Secure your spot at next year's biggest coding conference.
-
-    Upload Avatar
-    Drag and drop or click to upload
-    Upload your photo (JPG or PNG, max size: 500KB).
-
-    Full Name
-
-    Email Address
-    example@email.com
-
-    GitHub Username
-    @yourusername
-
-    Generate My Ticket
-
-    <!-- Form ends -->
-
-    <!-- Generated tickets starts -->
-
-    Congrats, <!-- Full Name -->! Your ticket is ready.
-
-    We've emailed your ticket to <!-- Email Address --> and will send updates in the run up to the event.
-
-    Coding Conf
-    Jan 31, 2025 / Austin, TX
-
-    <!-- Generated tickets ends -->
 
     <!-- @include 'scripts.kit' -->
 </body>
