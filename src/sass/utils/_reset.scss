@@ -32,11 +32,13 @@ textarea,
 select {
 	font-family: inherit;
 }
-button {
-	cursor: pointer;
-}
 
 ul,
 li {
 	list-style: none;
+}
+.generate-btn,
+.input,
+.upload-box-content {
+	cursor: pointer;
 }
