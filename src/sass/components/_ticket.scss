@@ -1,15 +1,68 @@
-.ticket {
-	background-image: url('/dist/images/pattern-ticket.svg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 160px;
-	width: 350px;
-
-	.ticket-code {
-		top: 50%;
-		right: 0.25rem;
-		transform: translateY(-50%) rotate(90deg);
+.ticket-container {
+	.ticket-heading {
+		margin: 0.75rem 0 1.25rem 0;
+		line-height: 33px;
+		.name-colored {
+			background: linear-gradient(var(--clr-gradient));
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+	.ticket-info {
+		margin-bottom: 4.5rem;
 		font-size: 1.25rem;
+		font-weight: 500;
 		color: var(--clr-neutral-500);
+		line-height: 24px;
+		.participant-mail {
+			color: var(--clr-orange-700);
+		}
+	}
+	.ticket {
+		.ticket-details-top {
+			padding: 1rem 0.75rem;
+			top: 0;
+			left: 0;
+
+			.ticket-logo {
+				transform: scale(0.75);
+			}
+			.ticket-conf-name {
+				color: var(--clr-white);
+				font-weight: 700;
+			}
+			.date-place {
+				font-size: 0.825rem;
+				color: var(--clr-neutral-300);
+			}
+		}
+		.ticket-details-bottom {
+			bottom: 0;
+			left: 0;
+
+			.user-avatar {
+				width: 2.75rem;
+				border-radius: 8px;
+			}
+			.participant-name {
+				font-size: 1.15rem;
+				color: var(--clr-white);
+			}
+			.github-name {
+				font-size: 0.75rem;
+				color: var(--clr-neutral-500);
+				img {
+					width: 1rem;
+				}
+			}
+		}
+		.ticket-code {
+			top: 50%;
+			right: -0.15rem;
+			transform: translateY(-50%) rotate(90deg);
+			font-size: 1.35rem;
+			font-weight: 500;
+			color: var(--clr-neutral-500);
+		}
 	}
 }

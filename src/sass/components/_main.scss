@@ -9,3 +9,14 @@ body {
 	background-repeat: no-repeat;
 	padding-top: 1.95rem;
 }
+.conf-heading {
+	font-size: 1.85rem;
+	font-weight: 700;
+	color: var(--clr-white);
+}
+.conf-text {
+	margin-bottom: 2rem;
+	font-size: 1.25rem;
+	color: var(--clr-neutral-300);
+	line-height: 25px;
+}

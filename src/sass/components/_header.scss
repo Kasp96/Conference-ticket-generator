@@ -1,6 +1,6 @@
 .app-header {
     .app-name-container {
-        margin-bottom: 2.3rem;
+        margin-bottom: 1.5rem;
 
         .conf-logo {
             width: 1.5rem;
@@ -11,14 +11,5 @@
             color: var(--clr-white);
         }
     }
-    .conf-heading {
-        font-size: 1.85rem;
-        font-weight: 700;
-        color: var(--clr-white);
-    }
-    .conf-text {
-        font-size: 1.25rem;
-        color: var(--clr-neutral-300);
-        line-height: 25px;
-    }
+    
 }

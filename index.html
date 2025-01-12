@@ -21,12 +21,11 @@
                 <img class="conf-logo" src="/dist/images/logo-mark.svg" alt="conference logo">
                 <h2 class="conf-name my-auto">Coding Conf</h2>
             </div>
-            <h1 class="conf-heading px-2">Your Journey to Coding Conf 2025 Starts Here!</h1>
-            <p class="conf-text mt-2">Secure your spot at next year's biggest coding conference.</p>
         </header>
         <main>
-            <div class="app-body px-1">
-
+            <div class="app-body px-1 d-none">
+    <h1 class="conf-heading px-2 text-center">Your Journey to Coding Conf 2025 Starts Here!</h1>
+    <p class="conf-text mt-3 text-center">Secure your spot at next year's biggest coding conference.</p>
     <div class="upload-box d-flex flex-column">
         <label class="label" for="file-input">Upload Avatar</label>
         <div class="upload-box-content d-flex flex-column align-items-center">
@@ -58,29 +57,30 @@
 
 
 </div>
-            <div class="generated-ticket-container">
-    <h2 class="generated-ticket-heading">
-        Congrats, Jonatan Kristof! Your ticket is ready.
+            <div class="ticket-container">
+    <h2 class="ticket-heading conf-heading text-center">
+        Congrats, <span class="name-colored">Jonatan Kristof!</span> Your ticket is ready.
     </h2>
-    <p class="generated-ticket-info">We've emailed your ticket to jonatan@email.com and will send
+    <p class="ticket-info text-center">We've emailed your ticket to <span
+            class="participant-mail">jonatan@email.com</span> and will send
         updates in the run up to the event.</p>
     <div class="ticket position-relative">
-        <div class="ticket-details">
-            <div class="details-top">
-                <img src="/dist/images/logo-mark.svg" alt="conference logo">
-                <div>
-                    <h3 class="ticket-conf-name">Coding Conf</h3>
-                    <p class="date">Jan 31, 2025 / Austin, TX</p>
-                </div>
+        <img class src="/dist/images/pattern-ticket.svg" alt="ticket-pattern">
+        <div class="ticket-details-top position-absolute d-flex align-items-start gap-2">
+            <img class="ticket-logo" src="/dist/images/logo-mark.svg" alt="conference logo">
+            <div>
+                <h3 class="ticket-conf-name">Coding Conf</h3>
+                <p class="date-place">Jan 31, 2025 / Austin, TX</p>
             </div>
-            <div class="details-bottom">
-                <div>
-                    <h4 class="participant-name">Jonatan Kristof</h4>
-                    <p class="github-name">
-                        <img src="/dist/images/icon-github.svg" alt="github logo">
-                        @jonatankristof0101
-                    </p>
-                </div>
+        </div>
+        <div class="ticket-details-bottom position-absolute d-flex gap-3 p-3">
+            <img class="user-avatar" src="/dist/images/image-avatar.jpg" alt="user-image">
+            <div class="d-flex flex-column">
+                <h4 class="participant-name m-0 p-0">Jonatan Kristof</h4>
+                <p class="github-name d-flex align-items-center m-0 p-0">
+                    <img class="me-1" src="/dist/images/icon-github.svg" alt="github logo">
+                    @jonatankristof0101
+                </p>
             </div>
         </div>
         <p class="ticket-code position-absolute">#01609</p>
