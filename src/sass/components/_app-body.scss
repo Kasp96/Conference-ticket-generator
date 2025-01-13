@@ -1,5 +1,8 @@
 .app-body {
+	padding-inline: 1rem;
 	margin-top: 1.15rem;
+	width: 375px;
+	max-width: 375px;
 
 	.label {
 		margin-bottom: 0.5rem;
@@ -16,9 +19,9 @@
 			backdrop-filter: blur(2px);
 			transition: background-color 0.2s;
 
-.file-input {
-	cursor: pointer;
-}
+			.file-input {
+				cursor: pointer;
+			}
 
 			.upload-img-icon {
 				margin: 1rem 0 0.75rem 0;

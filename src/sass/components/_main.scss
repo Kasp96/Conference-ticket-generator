@@ -7,16 +7,5 @@ body {
 	background-image: url('/dist/images/pattern-lines.svg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding: 1.95rem 0.75rem 7.5rem;
-}
-.conf-heading {
-	font-size: 1.85rem;
-	font-weight: 700;
-	color: var(--clr-white);
-}
-.conf-text {
-	margin-bottom: 2rem;
-	font-size: 1.25rem;
-	color: var(--clr-neutral-300);
-	line-height: 25px;
+	padding: 1.95rem 0 7.5rem 0;
 }

@@ -1,0 +1,46 @@
+@media (max-width: 374px) {
+	.app-body {
+		width: auto;
+
+		.upload-box {
+			.upload-box-content {
+				.upload-text {
+					font-size: 0.85rem;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 768px) {
+	body {
+		background-image: url('/dist/images/background-desktop.png');
+	}
+
+	.container {
+		padding: 2.25rem 0.75rem 7.5rem;
+		.app-header {
+			.app-name-container {
+				margin-bottom: 3.5rem;
+				.conf-logo {
+					width: 1.75rem;
+				}
+				.conf-name {
+					font-size: 1.75rem;
+				}
+			}
+			.conf-heading {
+				padding-inline: clamp(2rem, 10%, 10rem);
+				margin-bottom: 0.35rem;
+				font-size: clamp(1.85rem, 5vw, 4.1rem);
+				line-height: 68px;
+			}
+			.conf-text {
+				margin-bottom: 1.75rem;
+				font-size: clamp(1.25rem, 2vw, 1.75rem);
+			}
+		}
+		.app-body {
+			min-width: 490px;
+		}
+	}
+}
