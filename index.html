@@ -21,20 +21,19 @@
                 <img class="conf-logo" src="/dist/images/logo-mark.svg" alt="conference logo">
                 <h2 class="conf-name my-auto">Coding Conf</h2>
             </div>
-            <h1 class="conf-heading text-center d-none">Your Journey to Coding Conf 2025 Starts Here!</h1>
-            <p class="conf-text mt-3 text-center d-none">Secure your spot at next year's biggest coding conference.</p>
+            <h1 class="conf-heading text-center">Your Journey to Coding Conf 2025 Starts Here!</h1>
+            <p class="conf-text mt-3 text-center">Secure your spot at next year's biggest coding conference.</p>
         </header>
         <main>
-            <div class="app-body d-flex flex-column d-none">
-
+            <div class="app-body d-flex flex-column">
     <div class="upload-box d-flex flex-column">
         <label class="label" for="file-input">Upload Avatar</label>
-        <div class="upload-box-content d-flex flex-column align-items-center">
-            <label class="file-input" for="file-input">
+        <div class="upload-box-content d-flex flex-column align-items-center position-relative">
+            <input class="file-input position-absolute w-100 h-100 opacity-0" type="file" id="file-input">
+            <label class="upload-label text-center w-100 h-100" for="file-input">
                 <img class="upload-img-icon mx-auto p-2" src="/dist/images/icon-upload.svg" alt="upload icon">
                 <p class="upload-text">Drag and drop or click to upload</p>
             </label>
-            <input class="d-none" type="file" id="file-input">
         </div>
         <p class="hint d-flex align-items-center gap-2">
             <img src="/dist/images/icon-info.svg" alt="hint image">
@@ -43,22 +42,25 @@
     </div>
     <div class="name-box d-flex flex-column">
         <label class="label" for="name">Full Name</label>
-        <input class="input" type="text">
+        <div class="input-box position-relative">
+            <input class="input" type="text">
+        </div>
     </div>
     <div class="email-box d-flex flex-column">
         <label class="label" for="email">Email Address</label>
-        <input class="input" type="text" placeholder="example@email.com">
+        <div class="input-box position-relative">
+            <input class="input" type="text" placeholder="example@email.com">
+        </div>
     </div>
     <div class="github-box d-flex flex-column">
         <label class="label" for="GitHub-name">GitHub Username</label>
-        <input class="input" type="text" placeholder="@yourusername">
+        <div class="input-box position-relative">
+            <input class="input" type="text" placeholder="@yourusername">
+        </div>
     </div>
-    <div class="generate-btn text-center">Generate My Ticket</div>
-
-
-
+    <button class="generate-btn position-relative text-center">Generate My Ticket</button>
 </div>
-            <div class="ticket-container d-md-flex flex-md-column align-items-md-center">
+            <div class="ticket-container d-flex flex-column align-items-center d-none">
     <h2 class="ticket-heading conf-heading text-center">
         Congrats, <span class="name-colored">Jonatan Kristof!</span> Your ticket is ready.
     </h2>

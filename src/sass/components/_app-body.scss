@@ -5,6 +5,7 @@
 	max-width: 375px;
 
 	.label {
+		margin-top: 1.5rem;
 		margin-bottom: 0.5rem;
 		font-size: 1.25rem;
 		color: var(--clr-neutral-300);
@@ -37,44 +38,79 @@
 			}
 		}
 		.hint {
-			margin: 0.75rem 0 1.25rem 0;
+			margin: 0.5rem 0 0 0;
 			font-size: 0.75rem;
 			color: var(--clr-neutral-500);
 			font-weight: 700;
 		}
 	}
+	.input-box,
+	.input,
+	.input-box::before {
+		transition: background-color 0.2s;
+		border-radius: 12px;
+	}
+
+	.input-box::before,
+	.generate-btn::before,
+	.upload-box-content::before {
+		position: absolute;
+		content: '';
+		inset: -4px;
+		border: 2px solid transparent;
+		border-radius: 14px;
+		pointer-events: none;
+		transition: border-color 0.2s;
+	}
+	.upload-box-content::before {
+		inset: -6px;
+	}
+
+	.input-box:focus-within::before,
+	.generate-btn:focus::before,
+	.upload-box-content:focus-within::before {
+		border-color: var(--clr-neutral-500);
+	}
+
 	.input {
+		width: 100%;
 		padding: 12px 15px;
-		margin-bottom: 1.5rem;
 		background-color: var(--clr-faded-400);
 		border: 1px solid var(--clr-neutral-500);
-		border-radius: 12px;
 		font-size: 1.15rem;
 		font-weight: 400;
 		color: var(--clr-neutral-300);
-		outline: 0;
-		transition: background-color 0.2s;
+		outline: none;
 	}
+
 	.upload-box-content:hover,
-	.input:focus,
-	.input:hover {
+	.input-box:hover {
 		background-color: var(--clr-faded-800);
 	}
+
 	.input::placeholder {
 		color: var(--clr-neutral-300);
 		font-size: 1.05rem;
 		font-weight: 300;
 	}
 	.generate-btn {
+		margin-top: 1.75rem;
 		padding: 12px;
 		background-color: var(--clr-orange-500);
 		font-size: 1.25rem;
 		font-weight: 900;
 		color: var(--clr-neutral-900);
+		border: none;
+		outline: none;
 		border-radius: 8px;
 		transition: background-color 0.2s;
+	}
+	.generate-btn::before {
+		inset: -5px;
 	}
 	.generate-btn:hover {
 		background-color: var(--clr-orange-700);
 	}
 }
+
+// dokonczyc inputa i te style w tickecie dla headingow sa identyczne
