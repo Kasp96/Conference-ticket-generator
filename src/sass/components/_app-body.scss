@@ -27,7 +27,6 @@
 				border: 2px solid var(--clr-neutral-700);
 				border-radius: 10px;
 			}
-
 			.upload-text {
 				font-size: 1.15rem;
 				color: var(--clr-neutral-500);
@@ -66,7 +65,6 @@
 		transition: background-color 0.2s;
 		border-radius: 12px;
 	}
-
 	.input-box::before,
 	.generate-btn::before,
 	.upload-box-content::before {
@@ -81,13 +79,11 @@
 	.upload-box-content::before {
 		inset: -6px;
 	}
-
 	.input-box:focus-within::before,
 	.generate-btn:focus::before,
 	.upload-box-content:focus-within::before {
 		border-color: var(--clr-neutral-500);
 	}
-
 	.input {
 		width: 100%;
 		padding: 12px 15px;
@@ -98,12 +94,10 @@
 		color: var(--clr-neutral-300);
 		outline: none;
 	}
-
 	.upload-box-content:hover,
 	.input-box:hover {
 		background-color: var(--clr-faded-800);
 	}
-
 	.input::placeholder {
 		color: var(--clr-neutral-300);
 		font-size: 1.05rem;

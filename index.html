@@ -29,16 +29,16 @@
     <div class="upload-box d-flex flex-column">
         <label class="label" for="file-input">Upload Avatar</label>
         <div class="upload-box-content d-flex flex-column align-items-center position-relative">
-            <input class="file-input position-absolute w-100 h-100 opacity-0" type="file" id="file-input"
-                accept="image/*">
+            <input class="file-input position-absolute w-100 h-100 d-none" type="file" id="file-input" accept="image/*">
             <label class="upload-label text-center w-100 h-100" for="file-input">
                 <img class="upload-img-icon mx-auto" src="/dist/images/icon-upload.svg" alt="upload icon">
                 <p class="upload-text">Drag and drop or click to upload</p>
             </label>
         </div>
         <p class="hint d-flex align-items-center gap-2">
-            <img src="/dist/images/icon-info.svg" alt="hint image">
-            Upload your photo (JPG or PNG, max size: 500KB).
+            <img class="hint-icon" src="/dist/images/icon-info.svg" alt="hint image">
+            <span class="hint-text">Upload your photo (JPG or PNG, max size: 500KB).</span>
+
         </p>
     </div>
     <div class="form-box name-box d-flex flex-column">
