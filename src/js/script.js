@@ -5,12 +5,20 @@ const githubInput = document.querySelector('.github-input');
 const generateBtn = document.querySelector('.generate-btn');
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const inputFile = document.querySelector('.file-input');
+const uploadImgBox = document.querySelector('.upload-box-content');
 const uploadLabel = document.querySelector('.upload-label');
 const uploadIcon = document.querySelector('.upload-img-icon');
 const uploadText = document.querySelector('.upload-text');
-const hint = document.querySelector('.hint');
-const hintText = hint.querySelector('.hint-text');
-const hintIcon = hint.querySelector('.hint-icon');
+const hintText = document.querySelector('.hint-text');
+const hintIcon = document.querySelector('.hint-icon');
+const inputsPanel = document.querySelector('.container-xl');
+const ticketPanel = document.querySelector('.ticket-container');
+const ticketOwner = document.querySelector('.name-colored');
+const ownerEmail = document.querySelector('.participant-mail');
+const participantName = document.querySelector('.participant-name');
+const participantAvatar = document.querySelector('.user-avatar');
+const participantGithub = document.querySelector('.github-name-span');
+let ticketCode = document.querySelector('.ticket-code-number');
 
 const changeUploadImg = (e) => {
 	const file = e.target.files[0];
@@ -62,11 +70,24 @@ const changeUploadImg = (e) => {
 	};
 	reader.readAsDataURL(file);
 };
+const checkFileInput = () => {
+	const error = inputFile.parentElement.nextElementSibling;
+	const errorText = document.querySelector('.hint');
 
+	if (!inputFile.value) {
+		uploadImgBox.style.border = '1px solid var(--clr-orange-500)';
+		error.style.display = 'flex';
+		errorText.textContent = 'Please upload an image.';
+	} else {
+		errorText.textContent = 'Upload your photo (JPG or PNG, max size: 500KB).';
+		uploadImgBox.style.border = '1px solid var(--clr-neutral-500)';
+		error.style.display = 'none';
+	}
+};
 const changeUploadImgAction = (e) => {
-	e.preventDefault();
 	inputFile.disabled = false;
 	inputFile.click();
+	e.preventDefault();
 };
 const removeUploadImg = (e) => {
 	e.preventDefault();
@@ -124,6 +145,7 @@ const checkGithubInput = () => {
 };
 
 const checkInputs = () => {
+	checkFileInput();
 	checkNameInput();
 	checkEmailInput();
 	checkGithubInput();
@@ -132,17 +154,30 @@ const validateInputs = () => {
 	const isNameValid = nameInput.value.length > 3;
 	const isEmailValid = emailRegex.test(emailInput.value);
 	const isGithubValid = githubInput.value.length > 3;
-
 	return isNameValid && isEmailValid && isGithubValid;
 };
 
 const generateTicket = () => {
 	checkInputs();
 	if (validateInputs()) {
-		console.log('jest ok');
+		fillTicketDetails();
+		ticketPanel.classList.remove('d-none');
+		inputsPanel.classList.add('d-none');
 	} else {
-		console.log('nie jest ok');
+		ticketPanel.classList.add('d-none');
+		inputsPanel.classList.remove('d-none');
 	}
+};
+
+const fillTicketDetails = () => {
+	ticketOwner.textContent = nameInput.value;
+	ownerEmail.textContent = emailInput.value;
+	participantName.textContent = nameInput.value;
+	participantAvatar.src = uploadIcon.src;
+	participantGithub.textContent = githubInput.value;
+	let newTicketCode = parseInt(ticketCode.textContent) + 1;
+	newTicketCode = newTicketCode.toString().padStart(5, '0');
+	ticketCode.innerHTML = newTicketCode;
 };
 
 inputFile.addEventListener('change', changeUploadImg);

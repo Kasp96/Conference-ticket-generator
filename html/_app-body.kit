@@ -1,48 +1,53 @@
-<div class="app-body d-flex flex-column">
-    <div class="upload-box d-flex flex-column">
-        <label class="label" for="file-input">Upload Avatar</label>
-        <div class="upload-box-content d-flex flex-column align-items-center position-relative">
-            <input class="file-input position-absolute w-100 h-100 d-none" type="file" id="file-input" accept="image/*">
-            <label class="upload-label text-center w-100 h-100" for="file-input">
-                <img class="upload-img-icon mx-auto" src="/dist/images/icon-upload.svg" alt="upload icon">
-                <p class="upload-text">Drag and drop or click to upload</p>
-            </label>
-        </div>
-        <p class="hint d-flex align-items-center gap-2">
-            <img class="hint-icon" src="/dist/images/icon-info.svg" alt="hint image">
-            <span class="hint-text">Upload your photo (JPG or PNG, max size: 500KB).</span>
+<div class="container-xl d-flex flex-column align-items-center mx-auto m-0 p-0">
+    <h1 class="conf-heading text-center">Your Journey to Coding Conf 2025 Starts Here!</h1>
+    <p class="conf-text mt-3 text-center">Secure your spot at next year's biggest coding conference.</p>
+    <div class="app-body d-flex flex-column ">
+        <div class="upload-box d-flex flex-column">
+            <label class="label" for="file-input">Upload Avatar</label>
+            <div class="upload-box-content d-flex flex-column align-items-center position-relative">
+                <input class="file-input position-absolute w-100 h-100 d-none" type="file" id="file-input"
+                    accept="image/*">
+                <label class="upload-label text-center w-100 h-100" for="file-input">
+                    <img class="upload-img-icon mx-auto" src="/dist/images/icon-upload.svg" alt="upload icon">
+                    <p class="upload-text">Drag and drop or click to upload</p>
+                </label>
+            </div>
+            <p class="hint d-flex align-items-center gap-2">
+                <img class="hint-icon" src="/dist/images/icon-info.svg" alt="hint image">
+                <span class="hint-text">Upload your photo (JPG or PNG, max size: 500KB).</span>
 
-        </p>
-    </div>
-    <div class="form-box name-box d-flex flex-column">
-        <label class="label" for="name">Full Name</label>
-        <div class="input-box position-relative">
-            <input class="input name-input" type="text">
+            </p>
         </div>
-        <p class="error align-items-center gap-2 fw-normal"><img src="../dist/images/icon-info-error.svg"
-                alt="info icon">
-            <span class="error-text">Please enter a valid email address.</span>
-        </p>
-    </div>
-    <div class="form-box email-box d-flex flex-column">
-        <label class="label" for="email">Email Address</label>
-        <div class="input-box position-relative">
-            <input class="input email-input" type="email" placeholder="example@email.com">
+        <div class="form-box name-box d-flex flex-column">
+            <label class="label" for="name">Full Name</label>
+            <div class="input-box position-relative">
+                <input class="input name-input" type="text">
+            </div>
+            <p class="error align-items-center gap-2 fw-normal"><img src="../dist/images/icon-info-error.svg"
+                    alt="info icon">
+                <span class="error-text">Please enter a valid email address.</span>
+            </p>
         </div>
-        <p class="error align-items-center gap-2 fw-normal"><img src="../dist/images/icon-info-error.svg"
-                alt="info icon">
-            <span class="error-text">Please enter a valid email address.</span>
-        </p>
-    </div>
-    <div class="form-box github-box d-flex flex-column">
-        <label class="label" for="GitHub-name">GitHub Username</label>
-        <div class="input-box position-relative">
-            <input class="input github-input" type="text" placeholder="@yourusername">
+        <div class="form-box email-box d-flex flex-column">
+            <label class="label" for="email">Email Address</label>
+            <div class="input-box position-relative">
+                <input class="input email-input" type="email" placeholder="example@email.com">
+            </div>
+            <p class="error align-items-center gap-2 fw-normal"><img src="../dist/images/icon-info-error.svg"
+                    alt="info icon">
+                <span class="error-text">Please enter a valid email address.</span>
+            </p>
         </div>
-        <p class="error  align-items-center gap-2 fw-normal "><img src="../dist/images/icon-info-error.svg"
-                alt="info icon">
-            <span class="error-text">Please enter a valid email address.</span>
-        </p>
+        <div class="form-box github-box d-flex flex-column">
+            <label class="label" for="GitHub-name">GitHub Username</label>
+            <div class="input-box position-relative">
+                <input class="input github-input" type="text" placeholder="@yourusername">
+            </div>
+            <p class="error  align-items-center gap-2 fw-normal "><img src="../dist/images/icon-info-error.svg"
+                    alt="info icon">
+                <span class="error-text">Please enter a valid email address.</span>
+            </p>
+        </div>
+        <button class="generate-btn position-relative text-center">Generate My Ticket</button>
     </div>
-    <button class="generate-btn position-relative text-center">Generate My Ticket</button>
 </div>

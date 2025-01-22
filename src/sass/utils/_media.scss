@@ -1,15 +1,18 @@
 @media (max-width: 374px) {
-	.app-body {
-		width: auto;
+	.container-xl {
+		.app-body {
+			width: auto;
 
-		.upload-box {
-			.upload-box-content {
-				.upload-text {
-					font-size: 0.85rem;
+			.upload-box {
+				.upload-box-content {
+					.upload-text {
+						font-size: 0.85rem;
+					}
 				}
 			}
 		}
 	}
+
 	.ticket-container {
 		.ticket {
 			.ticket-details-top {
@@ -91,6 +94,8 @@
 					font-size: 1.75rem;
 				}
 			}
+		}
+		.container-xl {
 			.conf-heading {
 				padding-inline: clamp(2rem, 10%, 10rem);
 				margin-bottom: 0.35rem;
@@ -101,10 +106,11 @@
 				margin-bottom: 1.75rem;
 				font-size: clamp(1.25rem, 2vw, 1.75rem);
 			}
+			.app-body {
+				min-width: 490px;
+			}
 		}
-		.app-body {
-			min-width: 490px;
-		}
+
 		.ticket-container {
 			.ticket-heading {
 				padding-inline: clamp(2rem, 10%, 10rem);
