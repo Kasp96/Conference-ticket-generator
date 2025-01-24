@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +7,10 @@
     <!-- @include 'styles.kit' -->
 </head>
 
-<body>
-    <div class="container d-flex flex-column align-items-center">
+<body class="position-relative">
+    <div class="patterns-top position-absolute w-100 h-100 z-n1 overflow-hidden"></div>
+    <div class="container position-relative d-flex flex-column align-items-center overflow-hidden">
+        <div class="patterns-bottom position-absolute overflow-hidden  z-n1"></div>
         <header class="app-header d-flex flex-column align-items-center text-center">
             <div class="app-name-container d-flex align-items-center gap-3">
                 <img class="conf-logo" src="/dist/images/logo-mark.svg" alt="conference logo">

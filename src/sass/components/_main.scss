@@ -1,11 +1,48 @@
 body {
 	background-image: url('/dist/images/background-mobile.png');
 	background-size: cover;
+	
 }
 
+.patterns-top::before,
+.patterns-top::after {
+	position: absolute;
+	content: '';
+}
+
+.patterns-top::before {
+	top: -2rem;
+	left: -1.25rem;
+	width: 7rem;
+	height: 7rem;
+	background-image: url('/dist/images/pattern-circle.svg');
+	background-position: top left;
+	background-size: cover;
+}
+.patterns-top::after {
+	top: 1.5rem;
+	right: 0rem;
+	width: 7rem;
+	height: 5rem;
+	background-image: url('/dist/images/pattern-squiggly-line-top.svg');
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
 .container {
 	background-image: url('/dist/images/pattern-lines.svg');
 	background-size: cover;
+	background-size: 250% 90%;
 	background-repeat: no-repeat;
-	padding: 1.95rem 0 7.5rem 0;
+	padding: 0;
+
+	.patterns-bottom {
+		background-image: url('/dist/images/pattern-squiggly-line-bottom.svg');
+		background-size: contain;
+		background-repeat: no-repeat;
+		bottom: -7rem;
+		left: 0;
+		width: 19rem;
+		height: 19rem;
+	}
 }

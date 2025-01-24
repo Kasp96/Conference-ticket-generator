@@ -1,5 +1,6 @@
 .container-xl {
 	.conf-heading {
+		padding-top: 2.25rem;
 		margin-bottom: 0.15rem;
 		padding-inline: 0.5rem;
 		font-size: 1.85rem;
@@ -8,16 +9,26 @@
 	}
 	.conf-text {
 		margin-bottom: 1rem;
+
 		font-size: 1.25rem;
 		color: var(--clr-neutral-300);
 		line-height: 25px;
 	}
 	.app-body {
 		padding-inline: 1rem;
-		margin-top: 1.15rem;
+		margin-bottom: 6rem;
 		width: 375px;
 		max-width: 375px;
 
+		.patterns-mid {
+			background-image: url('/dist/images/pattern-circle.svg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			top: 48%;
+			right: -2.5rem;
+			width: 6.5rem;
+			height: 6.5rem;
+		}
 
 		.label {
 			margin-top: 1.45rem;
@@ -119,7 +130,7 @@
 			font-weight: 300;
 		}
 		.generate-btn {
-			margin-top: 1.75rem;
+			margin-top: 1.85rem;
 			padding: 12px;
 			background-color: var(--clr-orange-500);
 			font-size: 1.25rem;
@@ -138,5 +149,3 @@
 		}
 	}
 }
-
-// dokonczyc inputa i te style w tickecie dla headingow sa identyczne
