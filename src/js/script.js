@@ -28,7 +28,7 @@ const changeUploadImg = (e) => {
 		hintText.style.color = 'var(--clr-orange-700)';
 		return;
 	}
-	hintIcon.src = '../../../dist/images/icon-info.svg';
+	hintIcon.src = './dist/images/icon-info.svg';
 	hintText.textContent = 'Upload your photo (JPG or PNG, max size: 500KB).';
 	hintText.style.color = 'var(--clr-neutral-500)';
 	const reader = new FileReader();
@@ -78,9 +78,9 @@ const checkFileInput = () => {
 		error.style.display = 'flex';
 		hintText.textContent = 'Please upload an image.';
 		hintText.style.color = 'var(--clr-orange-700)';
-		hintIcon.src = '../../../dist/images/icon-info-error.svg';
+		hintIcon.src = './dist/images/icon-info-error.svg';
 	} else {
-		hintIcon.src = '../../../dist/images/icon-info.svg';
+		hintIcon.src = './dist/images/icon-info.svg';
 		hintText.textContent = 'Upload your photo (JPG or PNG, max size: 500KB).';
 		uploadImgBox.style.border = '1px solid var(--clr-neutral-500)';
 		error.style.display = 'none';
@@ -93,7 +93,7 @@ const changeUploadImgAction = (e) => {
 };
 const removeUploadImg = (e) => {
 	e.preventDefault();
-	uploadIcon.src = '../../../dist/images/icon-upload.svg';
+	uploadIcon.src = './dist/images/icon-upload.svg';
 	uploadIcon.style.width = 'auto';
 	uploadIcon.style.height = 'auto';
 	uploadIcon.style.padding = '';
