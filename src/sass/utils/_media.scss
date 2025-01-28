@@ -37,7 +37,7 @@
 	}
 }
 @media (min-width: 500px) and (max-width: 767px) {
-	.container {
+	.app-container {
 		.ticket-container {
 			.ticket {
 				.ticket-details-top {
@@ -81,9 +81,28 @@
 	body {
 		background-image: url('/dist/images/background-desktop.png');
 	}
+	.patterns-top::before {
+		top: -5rem;
+		left: 2.75rem;
+		width: 14rem;
+		height: 14rem;
+	}
+	.patterns-top::after {
+		top: 5.5rem;
+		width: 28rem;
+		height: 28rem;
+	}
+	.patterns-bottom {
+		background-image: url('/dist/images/pattern-squiggly-line-bottom-desktop.svg');
+		left: -7.5rem;
+		width: 65rem;
+		height: 35rem;
+	}
 
-	.container {
+	.app-container {
+		overflow: visible !important;
 		padding: 2.25rem 0.75rem 7.5rem;
+		background-size: 105% 90%;
 		.app-header {
 			.app-name-container {
 				margin-bottom: 3.5rem;
@@ -108,6 +127,13 @@
 			}
 			.app-body {
 				min-width: 490px;
+
+				.patterns-mid {
+					top: 33%;
+					right: -11rem;
+					width: 13rem;
+					height: 13rem;
+				}
 			}
 		}
 

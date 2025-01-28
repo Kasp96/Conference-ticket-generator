@@ -28,6 +28,7 @@
 			right: -2.5rem;
 			width: 6.5rem;
 			height: 6.5rem;
+			z-index: -1;
 		}
 
 		.label {
@@ -79,7 +80,7 @@
 			margin: 0.75rem 0 0 0;
 			font-size: 0.75rem;
 			color: var(--clr-neutral-500);
-			font-weight: 700;
+			font-weight: 400;
 		}
 		.error {
 			display: none;
@@ -90,6 +91,7 @@
 		.input-box::before {
 			transition: background-color 0.2s;
 			border-radius: 12px;
+			z-index: 1;
 		}
 		.input-box::before,
 		.generate-btn::before,
