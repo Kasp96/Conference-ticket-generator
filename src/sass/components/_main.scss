@@ -1,5 +1,5 @@
 body {
-	background-image: url('/dist/images/background-mobile.png');
+	background-image: url('../../../dist/images/background-mobile.png');
 	background-size: cover;
 }
 
@@ -14,7 +14,7 @@ body {
 	left: -1.25rem;
 	width: 7rem;
 	height: 7rem;
-	background-image: url('/dist/images/pattern-circle.svg');
+	background-image: url('../../../dist/images/pattern-circle.svg');
 	background-position: top left;
 	background-size: cover;
 }
@@ -23,13 +23,13 @@ body {
 	right: 0rem;
 	width: 7rem;
 	height: 5rem;
-	background-image: url('/dist/images/pattern-squiggly-line-top.svg');
+	background-image: url('../../../dist/images/pattern-squiggly-line-top.svg');
 	background-position: top right;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 .patterns-bottom {
-	background-image: url('/dist/images/pattern-squiggly-line-bottom.svg');
+	background-image: url('../../../dist/images/pattern-squiggly-line-bottom.svg');
 	background-size: cover;
 	bottom: 0;
 	left: 0;
@@ -39,7 +39,7 @@ body {
 }
 
 .app-container {
-	background-image: url('/dist/images/pattern-lines.svg');
+	background-image: url('../../../dist/images/pattern-lines.svg');
 	background-size: 250% 90%;
 	background-repeat: no-repeat;
 }
