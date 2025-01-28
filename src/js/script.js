@@ -23,7 +23,7 @@ let ticketCode = document.querySelector('.ticket-code-number');
 const changeUploadImg = (e) => {
 	const file = e.target.files[0];
 	if (file.size > 200 * 1024) {
-		hintIcon.src = '../../../dist/images/icon-info-error.svg';
+		hintIcon.src = './dist/images/icon-info-error.svg';
 		hintText.textContent = 'File too large. Please upload a photo under 500KB.';
 		hintText.style.color = 'var(--clr-orange-700)';
 		return;
