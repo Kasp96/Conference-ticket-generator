@@ -75,10 +75,10 @@ const checkFileInput = () => {
 
 	if (!inputFile.value) {
 		uploadImgBox.style.border = '1px solid var(--clr-orange-500)';
+		hintIcon.src = './dist/images/icon-info-error.svg';
 		error.style.display = 'flex';
 		hintText.textContent = 'Please upload an image.';
 		hintText.style.color = 'var(--clr-orange-700)';
-		hintIcon.src = './dist/images/icon-info-error.svg';
 	} else {
 		hintIcon.src = './dist/images/icon-info.svg';
 		hintText.textContent = 'Upload your photo (JPG or PNG, max size: 500KB).';
@@ -158,7 +158,7 @@ const validateInputs = () => {
 	const isGithubValid = githubInput.value.length > 3;
 	return isNameValid && isEmailValid && isGithubValid;
 };
-
+console.log('test');
 const generateTicket = () => {
 	checkInputs();
 	if (validateInputs()) {
